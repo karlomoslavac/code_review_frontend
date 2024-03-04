@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>CODE REVIEW</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <nav>
+            <h1>CODE REVIEW</h1>
+            <ul>
+                <li><a href="#">Naslovna stranica</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><button>Odjava</button></li>
+            </ul>
+        </nav>
+
+        <form id="loginForm">
+            <input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="current-email">
+            <input type="password" id="password" name="password" placeholder="Lozinka" required autocomplete="current-password">
+            <button type="submit">Prijavi se</button>
+        </form>
+
+        <textarea id="newCode" rows="10" cols="50" placeholder="Unesite novi kod"></textarea>
+
+        <button id="submitCode">Objavi kod</button>
+
+        <div id="otherCodes">
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
