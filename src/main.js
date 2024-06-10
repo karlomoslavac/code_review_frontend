@@ -4,7 +4,7 @@ import axios from 'axios';
 
 Vue.config.productionTip = false;
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = process.env.NODE_ENV === 'production' ? process.env.RENDER_DEPLOY_HOOK_URL : 'http://localhost:5000';
 
 new Vue({
   render: h => h(App),
